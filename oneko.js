@@ -112,7 +112,7 @@
     // every ~ 20 seconds
     if (
       idleTime > 10 &&
-      Math.floor(Math.random() * 200) == 0 &&
+      //Math.floor(Math.random() * 200) == 0 &&
       idleAnimation == null
     ) {
       let avalibleIdleAnimations = ["sleeping", "scratchSelf"];
@@ -140,7 +140,7 @@
           setSprite("tired", 0);
           break;
         }
-        setSprite("sleeping", Math.floor(idleAnimationFrame / 4));
+        setSprite("sleeping", Math.floor(idleAnimationFrame / 8));
         if (idleAnimationFrame > 192) {
           resetIdleAnimation();
         }
